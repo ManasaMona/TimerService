@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Timer</string>
+    <string name="timer1">TIMER1</string>
+    <string name="timer2">TIMER2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment"></string>
+    <string name="timerUpdateService">TIMER1_UPDATE_SERVICE</string>
+    <string name="timerOnFinish">TIMER1_ONFINISH</string>
+    <string name="timer2UpdateService">TIMER2_UPDATE_SERVICE</string>
+    <string name="timer2OnFinish">TIMER2_ONFINISH</string>
+    <string name="this_is_timer_1">This is timer 1</string>
+    <string name="this_is_timer_2">This is Timer 2</string>
+</resources>

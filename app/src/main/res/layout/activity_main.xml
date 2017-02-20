@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.manasaa.timer.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/timer1"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_ssize"
+        android:text="@string/timer1" />
+    <TextView
+        android:id="@+id/timer2"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/timer2"/>
+    </LinearLayout>
+
+    <fragment
+        android:name="com.example.manasaa.timer.Timer1Fragment"
+        android:id="@+id/fragment_timer1"
+        android:layout_below="@id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout="@layout/fragment_timer1"></fragment>
+
+    <fragment
+        android:name="com.example.manasaa.timer.Timer2Fragment"
+        android:id="@+id/fragment_timer2"
+        android:layout_below="@id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout="@layout/fragment_timer1"></fragment>
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/frame_section"-->
+        <!--android:layout_below="@id/linearLayout"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"></FrameLayout>-->
+</RelativeLayout>
